@@ -128,40 +128,42 @@ export default function PaginaInicial() {
 
 
           {/* Photo Area */}
-          <Box
-            styleSheet={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              maxWidth: '200px',
-              padding: '16px',
-              backgroundColor: appConfig.theme.colors.neutrals[800],
-              // border: '1px solid',
-              borderColor: appConfig.theme.colors.neutrals[800],
-              borderRadius: '10px',
-              flex: 1,
-              minHeight: '240px',
-            }}
-          >
-            <Image
+          <a target="_blank" href="https://github.com/lorabruna">
+            <Box
               styleSheet={{
-                borderRadius: '50%',
-                marginBottom: '16px',
-              }}
-              src={`https://github.com/${username}.png`}
-            />
-            <Text
-              variant="body4"
-              styleSheet={{
-                color: appConfig.theme.colors.neutrals[200],
-                backgroundColor: appConfig.theme.colors.neutrals[900],
-                padding: '3px 10px',
-                borderRadius: '1000px'
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                maxWidth: '200px',
+                padding: '16px',
+                backgroundColor: appConfig.theme.colors.neutrals[800],
+                // border: '1px solid',
+                borderColor: appConfig.theme.colors.neutrals[800],
+                borderRadius: '10px',
+                flex: 1,
+                minHeight: '240px',
               }}
             >
-              {username}
-            </Text>
-          </Box>
+              <Image
+                styleSheet={{
+                  borderRadius: '50%',
+                  marginBottom: '16px',
+                }}
+                src={`https://github.com/${username}.png`}
+              />
+              <Text
+                variant="body4"
+                styleSheet={{
+                  color: appConfig.theme.colors.neutrals[200],
+                  backgroundColor: appConfig.theme.colors.neutrals[900],
+                  padding: '3px 10px',
+                  borderRadius: '1000px'
+                }}
+              >
+                {username}
+              </Text>
+            </Box>
+          </a>
           {/* Photo Area */}
         </Box>
       </Box>
